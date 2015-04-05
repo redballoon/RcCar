@@ -1,0 +1,42 @@
+// Variables
+@odd: #eee;
+
+// Mixins
+.full_w_h {
+	width: 100%;
+	height: 100%;
+}
+
+// Mixins functions
+.opacity(@alpha: 0) {
+	@filter_alpha: @alpha * 100;
+	filter: alpha(opacity=@filter_alpha);
+	opacity: @alpha;
+}
+
+body {	
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrapper {
+	margin:  auto;
+	/*background-color: #333;
+	color: #fff;
+	*/
+}
+
+#body {
+	position: relative;
+}
+
+/* BEGIN: General */
+#browsehappy {
+	padding: 40px;
+	text-align: center;
+}
+
+.blue {
+	color: #3276b4;
+}
+/* END: General */
